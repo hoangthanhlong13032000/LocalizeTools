@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nhin cai gieeeee</title>
+    <link rel="stylesheet" href="./css/localize.css">
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <th>Open localize xml file here: </th>
+            <th colspan="2">
+                <input type="file" onchange="openFiles()" multiple>
+            </th>
+        </tr>
+        <tr>
+            <th>Filter</th>
+            <th>Json</th>
+            <th>Csv</th>
+        </tr>
+        <tr>
+            <td>
+                <select id="filter">
+                    <option value="full">Full</option>
+                    <option value="missing">Missing</option>
+                </select>
+            </td>
+            <td>
+                <a hidden id="download_json" type="button">Download</a>
+            </td>
+            <td>
+                <a hidden id="download_csv" type="button">Download</a>
+            </td>
+        </tr>
+    </Table>
+
+    <Table>
+        <tr>
+            
+        </tr>
+    </Table>
+</body>
+
+<script src="./js/vue.min.js"></script>
+<script src="./js/localize.js"></script>
+
+</html>
