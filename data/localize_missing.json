@@ -1,0 +1,26 @@
+{
+  "name1": {
+    "test_1.xml": "test 1 content",
+    "test_2.xml": "test 2 content"
+  },
+  "name2": {
+    "test_1.xml": "test 1 content 1",
+    "test_2.xml": "test 2 content 1"
+  },
+  "name4": {
+    "test_1.xml": "test 1 content",
+    "test_2.xml": "test 2 content 2"
+  },
+  "name3": {
+    "test_1.xml": "test 1 content 1",
+    "test_2.xml": "test 2 content 3"
+  },
+  "name5": {
+    "test_1.xml": "test 1 content 5",
+    "test_2.xml": ""
+  },
+  "name6": {
+    "test_1.xml": "test 1 content 6",
+    "test_2.xml": ""
+  }
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 
 <head>
     <title>Nhin cai gieeeee</title>
@@ -8,12 +8,18 @@
 
 <body>
 
-    <table>
+    <table id="tools">
         <tr>
             <th>Open localize xml file here: </th>
             <th colspan="2">
-                <input type="file" onchange="openFiles()" multiple>
+                <input type="file" @change="openFiles" multiple>
             </th>
+
+            <td rowspan="3" id="message">
+                <template v-for="m in messages">
+                    <div :class="m.type">{{m.content}} <br></div>
+                </template>
+            </td>
         </tr>
         <tr>
             <th>Filter</th>
@@ -22,25 +28,42 @@
         </tr>
         <tr>
             <td>
-                <select id="filter">
-                    <option value="full">Full</option>
-                    <option value="missing">Missing</option>
+                <select @change="onFilterChange" v-model="filter.current">
+                    <option v-for="f in filter.all" :value="f">{{f}}</option>
                 </select>
             </td>
             <td>
-                <a hidden id="download_json" type="button">Download</a>
+                <a hidden id="download_json"></a>
             </td>
             <td>
-                <a hidden id="download_csv" type="button">Download</a>
+                <a hidden id="download_csv"></a>
             </td>
         </tr>
     </Table>
 
-    <Table>
-        <tr>
-            
-        </tr>
-    </Table>
+    <div id="data">
+        <template v-if="columns.length > 0">
+            <center>
+                <h2>Data</h2>
+            </center>
+            <Table>
+                <tr>
+                    <th>STT</th>
+                    <th>key</th>
+                    <th v-for="col in columns">
+                        {{col}}
+                    </th>
+                </tr>
+                <tr v-for="(row, key, i) in rows">
+                    <td>{{i}}</td>
+                    <td>{{key}}</td>
+                    <td v-for="col in columns" :class="!row[col] ? 'missing' : ''">
+                        {{row[col]}}
+                    </td>
+                </tr>
+            </Table>
+        </template>
+    </div>
 </body>
 
 <script src="./js/vue.min.js"></script>

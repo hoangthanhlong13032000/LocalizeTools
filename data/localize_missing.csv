@@ -1,0 +1,25 @@
+key;values.xml;values-de.xml;values-vi.xml
+app_name;YTMusic;YTMusic;YTMusic
+title_home;Home;Home_de;Home
+title_trending;Trending;Trending_de;Trending
+title_histories;Histories;Histories_de;Histories
+title_playlists;Playlists;Playlists_de;Playlists
+title_downloaded;Downloaded;Downloaded_de;Downloaded
+txt_search;Search;Tìm kiếm_de;Tìm kiếm
+txt_search_youtube;Search YouTube;;
+txt_no_videos_found;No Videos found;Không tìm thấy Video_de;Không tìm thấy Video
+txt_retry;retry;Thử lại_de;Thử lại
+txt_trending_tab_now;Now;Now_de;Now
+txt_trending_tab_music;Music;Music_de;Music
+txt_trending_tab_gaming;Gaming;Gaming;Gaming
+txt_trending_tab_sport;Sport;Sport;Sport
+txt_test1;Test 1;Thử 1;
+txt_test2;Test 2;;
+txt_test3;Test 3;Thử 3;
+txt_test4;Test 4;;
+txt_test5;Test 5;Thử 5;Thử 5
+txt_test6;Test 6;Thử 6;Thử 6
+txt_test7;Test 7;;Thử 7
+txt_test8;Test 8;;Thử 8
+txt_test9;Test 9;;
+txt_test_de;;Test de duplicate 1;
